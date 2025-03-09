@@ -1,7 +1,7 @@
 // api.js (Centralized API Service - No Functionality Change)
 import axios from "axios";
 
-const API_URL = "http://192.168.0.105:5000";
+const API_URL = "https://test0xfafa5555.onrender.com";
 
 export const fetchPosts = async (type) => {
   try {
