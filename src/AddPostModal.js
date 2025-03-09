@@ -22,7 +22,7 @@ function AddPostModal({ fetchPosts }) {
       return;
     }
     try {
-      await axios.post("http://localhost:5000/post", {
+      await axios.post("https://test0xfafa5555.onrender.com/post", {
         title,
         content,
         categories,

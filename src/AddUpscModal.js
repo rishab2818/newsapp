@@ -32,11 +32,14 @@ function AddUpscModal() {
 
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/generate-question", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ subject, topic, mergedTopics }), // Sending all inputs
-      });
+      const response = await fetch(
+        "https://test0xfafa5555.onrender.com/generate-question",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ subject, topic, mergedTopics }), // Sending all inputs
+        }
+      );
 
       const data = await response.json();
       setTitle(data.question || "No question generated.");
@@ -58,7 +61,7 @@ function AddUpscModal() {
     }
 
     try {
-      await axios.post("http://localhost:5000/post", {
+      await axios.post("https://test0xfafa5555.onrender.com:5000/post", {
         title,
         content,
         categories: [subject],
