@@ -1,0 +1,70 @@
+/* Modal adjustments */
+.modal-lg {
+    max-width: 80%;
+    /* Make modal large */
+    height: auto;
+}
+
+/* Flexbox to arrange content */
+.modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The container for ReactQuill */
+.quill-container {
+    flex-grow: 1;
+    height: 300px;
+    /* Increased height */
+    overflow-y: auto;
+    /* Enable scrolling when content overflows */
+}
+
+/* React Quill editor style - Removed border */
+.ReactQuill {
+    min-height: 300px;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    /* Removed border */
+}
+.ql-editor::before {
+    font-size: 18px !important;
+    /* Adjust the size */
+    color: #999;
+    /* Optional: Change color */
+}
+.custom-quill .ql-editor {
+    min-height: 200px;
+    /* Adjust as needed */
+}
+/* Input fields and author/city styling */
+input.form-control {
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Styling category selection */
+label.mb-1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-size: 16px;
+}
+
+/* Modal header and footer */
+.modal-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
